@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 import logo from '../../assets/logo.png'
 
-const RegistreForm = () => {
+const Register = () => {
   return (
     <div className='login'>
       <img src={logo} alt="" />
@@ -18,4 +20,4 @@ const RegistreForm = () => {
   )
 }
 
-export default RegistreForm
+export default Register
