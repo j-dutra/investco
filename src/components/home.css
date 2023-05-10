@@ -1,0 +1,51 @@
+.home {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              2px 2px 8px rgba(0, 0, 0, .3);
+}
+
+.home-logo {
+  width: 60%;
+  background: transparent;
+}
+
+.home-form {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #ecf0f3;
+  gap: 1.6rem;
+}
+
+.home-btn {
+  width: 50%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              2px 2px 8px rgba(0, 0, 0, .3);
+  color: #f252a5;
+  font-size: 20px;
+  background-color: #ecf0f3;
+  outline: none;
+  cursor: pointer;
+}
