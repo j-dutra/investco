@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import './login.css'
+import logoIcon from '../assets/logo.png'
+
 function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
@@ -27,55 +30,28 @@ function Login() {
 
   return (
     <div className='login'>
-      <div className='login-form'>
-        <h1>Tela de Login</h1> 
-
-        <form className='form-login' onSubmit={handleLogin}>
-          <div>
-            <label htmlFor="username">Usuário:</label>
-            <input className='login-form-input' type="text" id="username" value={username} onChange={handleUsernameChange} />
-          </div>
-
-          <div>
-            <label htmlFor="password">Senha:</label>
-            <input className='login-form-input' type="password" id="password" value={password} onChange={handlePasswordChange} />
-          </div>
-          
-          <button type="submit">Entrar</button>
-          <button type="button" onClick={handleCancel}>Cancelar</button>
-        </form>
+      <div className="login-logo">
+        <img src={logoIcon} alt="" />
       </div>
+
+      <form className="login-form">
+        <div>
+          <label htmlFor="username">Usuário:</label>
+          <input className='login-input' type="text" id="username" value={username} onChange={handleUsernameChange} />
+        </div>
+
+        <div>
+          <label htmlFor="password">Senha:</label>
+          <input className='login-input' type="password" id="password" value={password} onChange={handlePasswordChange} />
+        </div>
+
+        <div>
+          <button className='login-btn' type="submit">Entrar</button>
+          <button className='login-btn' type="button" onClick={handleCancel}>Cancelar</ button>
+        </div>
+      </form>
     </div>
   )
 }
 
 export default Login;
-
-
-/*
-
-return (
-  <div className='login'>
-    <div className='login-form'>
-      <h1>Tela de Login</h1> 
-
-      <form className='form-login' onSubmit={handleLogin}>
-        <div>
-          <label htmlFor="username">Usuário:</label>
-          <input className='login-form-input' type="text" id="username" value={username} onChange={handleUsernameChange} />
-        </div>
-
-        <div>
-          <label htmlFor="password">Senha:</label>
-          <input className='login-form-input' type="password" id="password" value={password} onChange={handlePasswordChange} />
-        </div>
-        
-        <button type="submit">Entrar</button>
-        <button type="button" onClick={handleCancel}>Cancelar</button>
-      </form>
-    </div>
-  </div>
-);
-}
-
-*/

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import './register.css'
+import logoIcon from '../assets/logo.png'
+
 function Register() {
   const navigate = useNavigate();
   const [name, setName] = useState('');
@@ -31,23 +34,31 @@ function Register() {
   };
 
   return (
-    <div>
-      <h1>Tela de Registro</h1>
-      <form onSubmit={handleRegister}>
+    <div className='register'>
+      <div className="register-logo">
+        <img src={logoIcon} alt="" />
+      </div>
+
+      <form className='register-form' onSubmit={handleRegister}>
         <div>
           <label htmlFor="name">Nome:</label>
-          <input type="text" id="name" value={name} onChange={handleNameChange} />
+          <input className='register-input' type="text" id="name" value={name} onChange={handleNameChange} />
         </div>
+
         <div>
           <label htmlFor="email">E-mail:</label>
-          <input type="email" id="email" value={email} onChange={handleEmailChange} />
+          <input className='register-input' type="email" id="email" value={email} onChange={handleEmailChange} />
         </div>
+
         <div>
           <label htmlFor="password">Senha:</label>
-          <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+          <input className='register-input' type="password" id="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit">Registrar</button>
-        <button type="button" onClick={handleCancel}>Cancelar</button>
+
+        <div>
+          <button className='register-btn' type="submit">Registrar</button>
+          <button className='register-btn' type="button" onClick={handleCancel}>Cancelar</button>
+        </div>
       </form>
     </div>
   );

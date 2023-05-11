@@ -22,7 +22,7 @@ function Home() {
 
       <form className='home-form'>
         <button className='home-btn' onClick={handleLoginClick}>Entrar</button>
-        <button className='home-btn' onClick={handleRegisterClick}>Cadastra-se</button>
+        <button className='home-btn' onClick={handleRegisterClick}>Cadastre-se</button>
       </form>
     </div>
   );
