@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import './register.css'
-import logoIcon from '../assets/logo.png'
+import './style.css'
+import logoIcon from '../../assets/logo.png'
 
 function Register() {
   const navigate = useNavigate();
