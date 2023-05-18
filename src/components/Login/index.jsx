@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import './style.css'
-import logoIcon from '../../assets/logo.png'
+import Logo from '../Logo';
 
 function Login() {
   const navigate = useNavigate();
@@ -30,9 +30,7 @@ function Login() {
 
   return (
     <div className='login'>
-      <div className="login-logo">
-        <img src={logoIcon} alt="" />
-      </div>
+      <Logo />
 
       <form className="login-form">
         <div>

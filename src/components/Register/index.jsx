@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import './style.css'
-import logoIcon from '../../assets/logo.png'
+import Logo from '../Logo';
 
 function Register() {
   const navigate = useNavigate();
@@ -35,9 +35,7 @@ function Register() {
 
   return (
     <div className='register'>
-      <div className="register-logo">
-        <img src={logoIcon} alt="" />
-      </div>
+      <Logo />
 
       <form className='register-form' onSubmit={handleRegister}>
         <div>

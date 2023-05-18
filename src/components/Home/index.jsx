@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import logo from '../../assets/logo.png'
 import './style.css'
+import Logo from '../Logo';
 
 function Home() {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div className='home'>
-      <img className='home-logo' src={logo} alt="" />
+      <Logo />
       <h1>"Invista no seu futuro com confiança!</h1>
 
       <form className='home-form'>

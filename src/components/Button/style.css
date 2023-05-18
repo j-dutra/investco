@@ -1,0 +1,27 @@
+.login-btn {
+  width: 48%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              2px 2px 8px rgba(0, 0, 0, .3);
+  color: limegreen;
+  font-size: 20px;
+  background-color: #ecf0f3;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-btn:last-child{
+  margin-left: 4%;
+  color: #f252a5;
+}
+
+.login-btn:hover {
+  box-shadow: 10px 10px 10px #FFF;
+  filter: blur(20), opacity(70);
+}
